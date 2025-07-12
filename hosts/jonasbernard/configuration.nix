@@ -3,13 +3,15 @@
 {
   imports =
     [
-      ../../modules/home.nix
       inputs.home-manager.nixosModules.home-manager
+      ./hardware-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+
+  nixpkgs.hostPlatform = "x86_64-linux";
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos";
