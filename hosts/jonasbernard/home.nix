@@ -10,14 +10,13 @@
     enable = true;
     shellAliases = {
         btw = "echo i use nixos btw";
+        nrs = "sudo nixos-rebuild switch --flake";
     };
   };
   imports = [
-    ./browsers/browsers.nix
-    ./programs/programs.nix
-    ./social/social.nix
-    #./office/office.nix
+    ../../modules/moduleBundle.nix
   ];
+  vscode.enable = true;
   home.packages = with pkgs; [
     bat
     libreoffice

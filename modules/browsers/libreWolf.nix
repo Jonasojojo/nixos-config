@@ -2,7 +2,7 @@
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.librewolf;
+    package = pkgs.firefox;
     policies = {
       ExtensionSettings = {
         # add everforest_dark_hard to my browser

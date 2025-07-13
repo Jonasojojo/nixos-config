@@ -33,7 +33,9 @@
     useGlobalPkgs = true;
     backupFileExtension = "backup";
     users = {
-      jonasbernard = import ../../modules/home.nix;
+      jonasbernard = import ./home.nix {
+        inherit inputs config pkgs lib;
+      };
     };
   };
 
