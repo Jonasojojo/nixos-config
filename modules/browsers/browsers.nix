@@ -1,5 +1,5 @@
 {
   imports = [
-    ./libreWolf.nix
+    ./firefox.nix
   ];
 }

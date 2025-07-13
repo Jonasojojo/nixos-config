@@ -33,7 +33,7 @@
     useGlobalPkgs = true;
     backupFileExtension = "backup";
     users = {
-      jonasbernard = import ./home.nix
+      jonasbernard = import ./home.nix;
     };
   };
 
