@@ -17,6 +17,7 @@
     ../../modules/moduleBundle.nix
   ];
   vscode.enable = true;
+  firefox.enable = true;
   home.packages = with pkgs; [
     bat
     libreoffice
