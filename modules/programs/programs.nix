@@ -7,5 +7,7 @@
     ./eza.nix
     ./fzf.nix
     ./git.nix
+    ./yazi.nix
+    ./zsh.nix
   ];
 }

@@ -6,21 +6,13 @@
   home.stateVersion = "25.05";
 
 
-  programs.zsh = {
-    enable = true;
-    shellAliases = {
-        btw = "echo i use nixos btw";
-        nrs = "sudo nixos-rebuild switch --flake ./";
-        cd = "z";
-        ls = "eza --icons";
-        y = "yazi";
-    };
-  };
+
   imports = [
     ../../modules/moduleBundle.nix
   ];
   vscode.enable = true;
   firefox.enable = true;
+  zsh.enable = true;
   home.packages = with pkgs; [
     bat
     libreoffice
