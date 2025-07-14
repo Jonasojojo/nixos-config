@@ -14,7 +14,7 @@
         cat = "bat";
       };
       syntaxHighlighting.enable = true;
-      enableAutosuggestions = true;
+      autosuggestion.enable = true;
     };
   };
 }

@@ -7,6 +7,10 @@
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";
       };
+      catppuccin = {
+        url = "github:catppuccin/nix";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
       hyprland = {
         url = "github:hyprwm/Hyprland";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -28,6 +32,7 @@
         specialArgs = { inherit inputs system ; };
         modules = [
           ./hosts/jonasbernard/configuration.nix
+          inputs.home-manager.nixosModules.home-manager
         ];
       };
     };

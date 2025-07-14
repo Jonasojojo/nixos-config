@@ -1,6 +1,7 @@
 {
   programs.kitty = {
     enable = true;
-    extraConfig = builtins.readFile ./themes/everforest.conf;
+    #themeFile = "Catppuccin-Frappe";
+    #extraConfig = builtins.readFile ./themes/everforest.conf;
   };
 }

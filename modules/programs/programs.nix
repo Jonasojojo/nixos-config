@@ -10,5 +10,6 @@
     ./yazi.nix
     ./zsh.nix
     ./ohMyPosh.nix
+    ./bat.nix
   ];
 }
