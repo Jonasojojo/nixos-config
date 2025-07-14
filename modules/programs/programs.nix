@@ -9,5 +9,6 @@
     ./git.nix
     ./yazi.nix
     ./zsh.nix
+    ./ohMyPosh.nix
   ];
 }

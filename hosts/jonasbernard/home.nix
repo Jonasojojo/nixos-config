@@ -13,6 +13,7 @@
   vscode.enable = true;
   firefox.enable = true;
   zsh.enable = true;
+  ohMyPosh.enable = true;
   home.packages = with pkgs; [
     bat
     libreoffice
